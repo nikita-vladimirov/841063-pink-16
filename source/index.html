@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="header-main">
-      <img class="logo header-main__logo" src="http://placehold.it/150x100" alt="Логотип">
+      <a class="logo header-main__logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
       <nav class="menu-main">
         <button class="menu-main__btn" type="button">Меню</button>
         <ul class="menu menu-main__list" >
@@ -14,7 +14,7 @@
             <a>Главная</a>
           </li>
           <li class="menu__item">
-            <a href="foto.html">Фотографии</a>
+            <a href="photo.html">Фотографии</a>
           </li>
           <li class="menu__item">
             <a href="form.html">Конкурс</a>
@@ -28,10 +28,14 @@
     <main class="index-main">
       <article class="download-app">
         <a href="" class="button download-app__btn">Скачать приложение</a>
+        <a href="" class="download-app__market-btn">iOS</a>
+        <a href="" class="download-app__market-btn">Android OS</a>
+        <a href="" class="download-app__market-btn">Windows phone</a>
         <small class="download-app__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</small>
       </article>
       <section class="description">
-        <p class="description__sign">Устали от серости мегаполиса?  Нам есть, что вам  предложить!</p>
+        <p class="description__sign">Устали от серости мегаполиса?</p>
+        <p class="description__sign">Нам есть, что вам  предложить!</p>
         <ul class="description__list">
           <li class="description__item">
             <h3>Поднимает настроение</h3>
@@ -67,49 +71,60 @@
         <table class="rate__list">
           <tr class="rate__header">
             <td></td>
-            <td>База<br>1,99 USD</td>
-            <td>Стандарт<br>3,99 USD</td>
-            <td>Анлим<br>9,99 USD</td>
+            <td>
+              <h3 class="rate__header">База</h3>
+              <span class="rate__cost">1,99 USD</span>
+            </td>
+            <td>
+              <h3 class="rate__header">Стандарт</h3>
+              <span class="rate__cost">3,99 USD</span>
+            </td>
+            <td>
+              <h3 class="rate__header">Анлим</h3>
+              <span class="rate__cost">9,99 USD</span>
+            </td>
           </tr>
           <tr>
             <td class="rate__value">Розовый фильтр</td>
-            <td class="rate__value">y</td>
-            <td class="rate__value">y</td>
-            <td class="rate__value">y</td>
+            <td class="rate__value rate__value--yes">y</td>
+            <td class="rate__value rate__value--yes">y</td>
+            <td class="rate__value rate__value--yes">y</td>
           </tr>
           <tr>
             <td class="rate__value">Смайлики</td>
-            <td class="rate__value">n</td>
-            <td class="rate__value">y</td>
-            <td class="rate__value">y</td>
+            <td class="rate__value rate__value--no">n</td>
+            <td class="rate__value rate__value--yes">y</td>
+            <td class="rate__value rate__value--yes">y</td>
           </tr>
           <tr>
             <td class="rate__value">Комментарии</td>
-            <td class="rate__value">n</td>
-            <td class="rate__value">n</td>
-            <td class="rate__value">y</td>
+            <td class="rate__value rate__value--no">n</td>
+            <td class="rate__value rate__value--no">n</td>
+            <td class="rate__value rate__value--yes">y</td>
           </tr>
         </table>
       </section>
+      <section class="contacts">
+        <p>Остались вопросы? Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3>Звоните:</h3>
+            <p class="contacts__data">+7 (812) 555-66-66</p>
+          </li>
+          <li class="contacts__item">
+            <h3>Пишите:</h3>
+            <p class="contacts__data">mail@htmlacademy.ru</p>
+          </li>
+          <li class="contacts__item">
+            <h3>Приезжайте в гости:</h3>
+            <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <img class="contacts__map" src="http://placehold.it/150x100" alt="Расположение Пинк на карте">
+      </section>
     </main>
     <footer>
-      <section class="contacts">
-          <p>Остались вопросы? Свяжитесь с нами!</p>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3>Звоните:</h3>
-              <p class="contacts__data">+7 (812) 555-66-66</p>
-            </li>
-            <li class="contacts__item">
-              <h3>Пишите:</h3>
-              <p class="contacts__data">mail@htmlacademy.ru</p>
-            </li>
-            <li class="contacts__item">
-              <h3>Приезжайте в гости:</h3>
-              <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
-            </li>
-          </ul>
-        </section>
+
     </footer>
   </body>
 </html>
