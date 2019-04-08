@@ -25,10 +25,10 @@
         </ul>
       </nav>
     </header>
-    <main class="photo-main">
-      <h1 class="photo-main__heading">Фотографии пользователей</h1>
-      <p class="photo-main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="posts photo-main__posts">
+    <main class="main">
+      <h1 class="main__heading">Фотографии пользователей</h1>
+      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="posts main__posts">
         <figure class="post posts__item">
           <img class="post__image" src="http://placehold.it/150x100" alt="Вид с моста через реку">
           <figcaption class="post__description">
@@ -81,7 +81,7 @@
             <span class="post__time">(40 часов назад)</span>
             <p class="post__comment">Где снег-то?</p>
             <span class="post__like">Нравится: 150</span>
-          </figcaption class="post__description">
+          </figcaption>
         </figure>
         <figure class="post posts__item">
           <img class="post__image" src="http://placehold.it/150x100" alt="Крыло самолета">
@@ -93,14 +93,13 @@
           </figcaption>
         </figure>
       </section>
-      <section class="publication photo-main__publication">
+      <section class="publication main__publication">
         <p class="publication__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <img class="publication__image" src="http://placehold.it/150x100" alt="Зимняя дорога">
         <form class="edit publication__edit" action="https://echo.htmlacademy.ru" method="POST">
-          <input class="edit__filter" type="checkbox">
-          <input class="edit__filter" type="checkbox">
-          <input class="edit__filter" type="checkbox">
-          <div></div>
+          <div class="edit__filter edit__filter--crop"></div>
+          <div class="edit__filter edit__filter--fill"></div>
+          <div class="edit__filter edit__filter--lighting"></div>
           <button class="button edit__button" type="submit">Запостить</button>
           <button class="button edit__button" type="reset">Отмена</button>
         </form>

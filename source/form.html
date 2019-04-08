@@ -25,11 +25,55 @@
         </ul>
       </nav>
     </header>
-    <main class="form-main">
-      <h1 class="form-main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="form-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-
+    <main class="main">
+      <h1 class="main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="main__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form-item">
+          <label class="form-item__description" for="surname">Фамилия:</label>
+          <input class="form-item__text" type="text" id="surname" name="surname" value="Укажите фамилию *">
+          <label class="form-item__description" for="first-name">Имя:</label>
+          <input class="form-item__text" type="text" id="first-name"  name="first-name" value="Введите ваше имя *">
+          <label class="form-item__description" for="patronymic">Отчество:</label>
+          <input class="form-item__text" type="text" id="patronymic" name="patronymic" value="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="form-item">
+          <legend class="form-item__description">Ваши безбашенные достижения в путешествии</legend>
+          <input class="form-item__checkbox" type="checkbox" id="selfie" name="selfie" checked>
+          <label class="form-item__text" for="selfie">Сделал селфи с акулой</label>
+          <input class="form-item__checkbox" type="checkbox" id="beach" name="beach" checked>
+          <label class="form-item__text" for="beach">Обгорел на пляже</label>
+          <input class="form-item__checkbox" type="checkbox" id="chuck" name="chuck">
+          <label class="form-item__text" for="chuck">Видел Чака Норриса</label>
+          <input class="form-item__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
+          <label class="form-item__text" for="souvenirs">Накупил сувениров</label>
+          <input class="form-item__checkbox" type="checkbox" id="tower" name="tower" checked>
+          <label class="form-item__text" for="tower">Удержал башню</label>
+          <input class="form-item__checkbox" type="checkbox" id="hotel" name="hotel">
+          <label class="form-item__text" for="hotel">Разгромил отель</label>
+        </fieldset>
+        <fieldset class="form-item">
+          <legend class="form-item__description">Контактная информация</legend>
+          <label class="form-item__description" for="phone">Номер телефона</label>
+          <input class="form-item__text" type="text" id="phone" name="phone" value="Номер, пожалуйста">
+          <label class="form-item__description" for="mail">Адрес почты</label>
+          <input class="form-item__text" type="text" id="mail" name="mail" value="Введите почту *">
+        </fieldset>
+        <fieldset class="form-item">
+          <legend class="form-item__description">С каким приложением путешествовали?</legend>
+          <input class="form-item__radio" type="radio" id="ios" name="os" checked>
+          <label class="form-item__text" for="ios">Pink для iOS</label>
+          <input class="form-item__radio" type="radio" id="android" name="os">
+          <label class="form-item__text" for="android">Pink на Android</label>
+          <input class="form-item__radio" type="radio" id="wp" name="os">
+          <label class="form-item__text" for="wp">Windows Phone</label>
+        </fieldset>
+        <fieldset class="form-item">
+            <legend class="form-item__description">Опишите свои эмоции</legend>
+            <input class="form-item__text" type="text" value="Можно прям в красках, не стесняясь в выражениях">
+        </fieldset>
+        <button class="main__btn" type="submit">Отправить форму</button>
+        <p class="main__description"><span class="form-item__description">*</span>-Обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
