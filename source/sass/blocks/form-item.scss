@@ -1,0 +1,30 @@
+.form-item__label {
+  padding-left: 23px;
+  padding-bottom: 12px;
+  color: $hover-color;
+
+  text-transform: uppercase;
+}
+
+.form-item__input {
+  width: 280px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  font-size: 18px;
+  color: #283645;
+
+  border: 2px solid $disabled-color;
+}
+
+.contest-form__legend {
+  width: 240px;
+
+  color: $hover-color;
+
+  text-transform: uppercase;
+  text-align: center;
+}

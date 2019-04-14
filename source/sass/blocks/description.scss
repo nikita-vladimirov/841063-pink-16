@@ -1,0 +1,28 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.description__sign {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-size: 24px;
+}
+
+.description__list {
+  @include no-style;
+
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f2f2f2;
+}
+
+
+
+

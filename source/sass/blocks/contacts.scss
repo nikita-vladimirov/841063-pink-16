@@ -1,0 +1,18 @@
+.contacts {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.contacts__text {
+  font-size: 24px;
+}
+
+.contacts__list {
+  @include no-style;
+}
+
+.contacts__data {
+  font-size: 24px;
+
+  color: $hover-color;
+}

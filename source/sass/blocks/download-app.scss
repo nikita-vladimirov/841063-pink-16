@@ -1,0 +1,24 @@
+.download-app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+
+  background-color: #1d2631;
+}
+
+.download-app__sign {
+  margin-right: 20px;
+  margin-left: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.download-app__btn {
+  color: #ffffff;
+}

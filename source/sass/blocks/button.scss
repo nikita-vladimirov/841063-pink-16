@@ -1,0 +1,32 @@
+.button {
+  @include no-style;
+
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 10px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 35px;
+}
+
+.button--active {
+  background-color: $bg-color;
+  border-color: $hover-color;
+
+  color: $hover-color;
+}
+
+.button--disabled {
+  background-color: $bg-color;
+  border-color: $disabled-color;
+
+  color: $disabled-color;
+}

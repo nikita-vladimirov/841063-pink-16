@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>PINK Фотографии</title>
+    <link rel="stylesheet" href="css/style.css"
   </head>
   <body>
     <header class="header-main">
-        <a href="index.html" class="logo header-main__logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
       <nav class="menu-main">
-        <button class="menu-main__btn" type="button">Меню</button>
+        <div class="menu-main__wrapper">
+          <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
+          <button class="menu-main__btn" type="button">Меню</button>
+        </div>
         <ul class="menu menu-main__list" >
           <li class="menu__item">
             <a href="index.html">Главная</a>
@@ -27,9 +31,9 @@
     </header>
     <main class="main">
       <h1 class="main__heading">Фотографии пользователей</h1>
-      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
       <section class="posts main__posts">
-        <figure class="post posts__item">
+        <figure class="post posts__item posts__item--prime">
           <img class="post__image" src="http://placehold.it/150x100" alt="Вид с моста через реку">
           <figcaption class="post__description">
             <b class="post__author">Анна</b>
@@ -95,18 +99,23 @@
       </section>
       <section class="publication main__publication">
         <p class="publication__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="publication__image" src="http://placehold.it/150x100" alt="Зимняя дорога">
-        <form class="edit publication__edit" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="edit__filter edit__filter--crop"></div>
-          <div class="edit__filter edit__filter--fill"></div>
-          <div class="edit__filter edit__filter--lighting"></div>
-          <button class="button edit__button" type="submit">Запостить</button>
-          <button class="button edit__button" type="reset">Отмена</button>
+        <div class="publication__wrapper">
+          <img class="publication__image" src="http://placehold.it/150x100" alt="Зимняя дорога">
+          <form class="edit publication__edit" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="edit__wrapper">
+              <div class="edit__filter edit__filter--crop"></div>
+              <div class="edit__filter edit__filter--fill"></div>
+              <div class="edit__filter edit__filter--lighting"></div>
+            </div>
+            <button class="button button--active edit__button" type="submit">Запостить</button>
+            <button class="button button--disabled edit__button" type="reset">Отмена</button>
+          </div>
         </form>
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__logo" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип"></a>
+      <a class="footer__logo" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип"></a>
       <ul class="footer__social">
         <li><a class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
         <li><a class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>

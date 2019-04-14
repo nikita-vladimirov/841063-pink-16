@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--none {
+  display: none;
+}
+
+.footer__logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__social {
+  @include no-style;
+
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__social-link {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.footer__developer {
+  padding-bottom: 40px;
+}
