@@ -17,16 +17,16 @@
   border-radius: 35px;
 }
 
-.button--active {
+.button--red {
   background-color: $bg-color;
-  border-color: $hover-color;
+  border-color: $color-red;
 
-  color: $hover-color;
+  color: $color-red;
 }
 
-.button--disabled {
+.button--grey {
   background-color: $bg-color;
-  border-color: $disabled-color;
+  border-color: $color-grey;
 
-  color: $disabled-color;
+  color: rgba(40, 54, 69, 0.1);
 }

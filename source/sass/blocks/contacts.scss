@@ -1,6 +1,8 @@
 .contacts {
   padding-right: 20px;
   padding-left: 20px;
+
+  text-align: center;
 }
 
 .contacts__text {
@@ -14,5 +16,5 @@
 .contacts__data {
   font-size: 24px;
 
-  color: $hover-color;
+  color: $color-red;
 }
