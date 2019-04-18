@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-main">
-      <a class="logo header-main__logo"><img src="http://placehold.it/150x100" alt="Логотип"></a>
       <nav class="menu-main">
-        <button class="menu-main__btn" type="button">Меню</button>
+        <div class="menu-main__wrapper">
+          <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
+          <button class="menu-main__btn" type="button">Меню</button>
+        </div>
         <ul class="menu menu-main__list" >
           <li class="menu__item">
             <a>Главная</a>
@@ -28,58 +32,60 @@
     <main class="index-main">
       <article class="download-app">
         <a href="" class="button download-app__btn">Скачать приложение</a>
-        <a href="" class="download-app__market-btn">iOS</a>
-        <a href="" class="download-app__market-btn">Android OS</a>
-        <a href="" class="download-app__market-btn">Windows phone</a>
-        <small class="download-app__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</small>
+        <div class="download-app__wrapper">
+          <a href="" class="download-app__market-btn">iOS</a>
+          <a href="" class="download-app__market-btn">Android OS</a>
+          <a href="" class="download-app__market-btn">Windows phone</a>
+        </div>
+        <small class="download-app__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
       </article>
       <section class="description">
         <p class="description__sign">Устали от серости мегаполиса?</p>
         <p class="description__sign">Нам есть, что вам  предложить!</p>
         <ul class="description__list">
           <li class="description__item">
-            <h3>Поднимает настроение</h3>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="minor-title">Поднимает настроение</h3>
+            <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="description__item">
-            <h3>Меняет мир вокруг</h3>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="minor-title">Меняет мир вокруг</h3>
+            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="description__item">
-            <h3>Заводит новых друзей</h3>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="minor-title">Заводит новых друзей</h3>
+            <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
       <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
-            <h3>Николай Петров</h3>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <h3 class="minor-title minor-title--higher">Николай Петров</h3>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
           <li class="reviews__item">
-            <h3></h3>
-            <p></p>
+            <h3 class="minor-title minor-title--higher"></h3>
+            <p class="reviews__text"></p>
           </li>
           <li class="reviews__item">
-            <h3></h3>
-            <p></p>
+            <h3 class="minor-title minor-title--higher"></h3>
+            <p class="reviews__text"></p>
           </li>
         </ul>
       </section>
       <section class="rate">
         <table class="rate__list">
-          <tr class="rate__header">
+          <tr>
             <td></td>
-            <td>
+            <td class="rate__main-cell">
               <h3 class="rate__header">База</h3>
               <span class="rate__cost">1,99 USD</span>
             </td>
-            <td>
+            <td class="rate__main-cell">
               <h3 class="rate__header">Стандарт</h3>
               <span class="rate__cost">3,99 USD</span>
             </td>
-            <td>
+            <td class="rate__main-cell">
               <h3 class="rate__header">Анлим</h3>
               <span class="rate__cost">9,99 USD</span>
             </td>
@@ -105,26 +111,33 @@
         </table>
       </section>
       <section class="contacts">
-        <p>Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <h3>Звоните:</h3>
+            <h3 class="minor-title">Звоните:</h3>
             <p class="contacts__data">+7 (812) 555-66-66</p>
           </li>
           <li class="contacts__item">
-            <h3>Пишите:</h3>
+            <h3 class="minor-title">Пишите:</h3>
             <p class="contacts__data">mail@htmlacademy.ru</p>
           </li>
           <li class="contacts__item">
-            <h3>Приезжайте в гости:</h3>
+            <h3 class="minor-title">Приезжайте в гости:</h3>
             <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
         <img class="contacts__map" src="http://placehold.it/150x100" alt="Расположение Пинк на карте">
       </section>
     </main>
-    <footer>
-
+    <footer class="footer footer--none">
+      <a class="footer__logo" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип"></a>
+      <ul class="footer__social">
+        <li><a class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
+        <li><a class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
+        <li><a class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
+      </ul>
+      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
     </footer>
   </body>
 </html>

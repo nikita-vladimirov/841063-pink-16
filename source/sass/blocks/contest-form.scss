@@ -1,0 +1,58 @@
+.contest-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+}
+
+.contest-form__wrapper {
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.contest-form__wrapper--darken {
+  background-color: $bg-color;
+}
+
+.contest-form__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.contest-form__legend {
+  width: 240px;
+
+  line-height: 18px;
+  color: $color-red;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contest-form__item {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contest-form__review {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 120px;
+
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+
+  border: 2px solid $color-grey;
+}

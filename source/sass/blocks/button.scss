@@ -1,0 +1,32 @@
+.button {
+  @include no-style;
+
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-bottom: 17px;
+  padding-left: 10px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 35px;
+}
+
+.button--red {
+  background-color: $bg-color;
+  border-color: $color-red;
+
+  color: $color-red;
+}
+
+.button--grey {
+  background-color: $bg-color;
+  border-color: $color-grey;
+
+  color: rgba(40, 54, 69, 0.1);
+}

@@ -1,0 +1,45 @@
+.post {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-right: 17px;
+  padding-left: 17px;
+
+  text-align: left;
+  background-color: $bg-color;
+}
+
+.post__image {
+  padding-bottom: 23px;
+}
+
+.post__description {
+  margin: 0;
+  padding: 0;
+}
+
+.post__author {
+  padding-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.post__time {
+  font-size: 12px;
+
+  text-transform: uppercase;
+}
+
+.post__comment {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.post__like {
+  display: inline-block;
+  padding-bottom: 15px;
+
+  font-size: 12px;
+  color: $color-red;
+
+  text-transform: uppercase;
+}
