@@ -31,13 +31,15 @@
     </header>
     <main class="main">
       <h1 class="main__heading">Фотографии пользователей</h1>
-      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
       <section class="posts main__posts">
         <figure class="post posts__item posts__item--prime">
           <img class="post__image" src="http://placehold.it/150x100" alt="Вид с моста через реку">
           <figcaption class="post__description">
-            <b class="post__author">Анна</b>
-            <span class="post__time">(5 минут назад)</span>
+            <div class="post__wrapper">
+              <b class="post__author">Анна</b>
+              <span class="post__time">(5 минут назад)</span>
+            </div>
             <p class="post__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <span class="post__like">Нравится: 215</span>
           </figcaption>
@@ -98,7 +100,7 @@
         </figure>
       </section>
       <section class="publication main__publication">
-        <p class="publication__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="publication__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
         <div class="publication__wrapper">
           <img class="publication__image" src="http://placehold.it/150x100" alt="Зимняя дорога">
           <form class="edit publication__edit" action="https://echo.htmlacademy.ru" method="POST">
@@ -107,8 +109,10 @@
               <div class="edit__filter edit__filter--fill"></div>
               <div class="edit__filter edit__filter--lighting"></div>
             </div>
-            <button class="button button--red edit__button" type="submit">Запостить</button>
-            <button class="button button--grey edit__button" type="reset">Отмена</button>
+            <div class="edit__button-list">
+              <button class="button button--red edit__button" type="submit">Запостить</button>
+              <button class="button button--grey edit__button" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>

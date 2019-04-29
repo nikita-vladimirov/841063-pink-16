@@ -7,3 +7,38 @@
 .edit__button {
   margin-bottom: 12px;
 }
+
+@media (min-width: $tablet-width) {
+  .edit {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .edit__wrapper {
+    border: none;
+  }
+
+  .edit__filter {
+    height: 20px;
+    border-bottom: 1px solid $color-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .edit {
+    justify-content: space-between;
+  }
+
+  .edit__button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 410px;
+  }
+
+  .edit__button {
+    width: 185px;
+    margin-bottom: 0;
+  }
+}

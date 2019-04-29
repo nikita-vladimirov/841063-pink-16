@@ -30,4 +30,32 @@
 
 .footer__developer {
   padding-bottom: 40px;
+
+  font-size: 14px;
+  color: $navy-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .footer--none {
+    display: flex;
+  }
+
+  .footer {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    margin-right: 130px;
+    margin-left: 130px;
+  }
+  .footer__developer {
+    font-size: 18px;
+  }
 }

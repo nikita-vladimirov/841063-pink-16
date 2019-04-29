@@ -1,12 +1,22 @@
 .download-app {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-top: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   align-items: center;
 
   background-color: #1d2631;
+}
+
+.download-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-app h2 {
+  display: none;
 }
 
 .download-app__sign {
@@ -23,3 +33,60 @@
 .download-app__btn {
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    flex-direction: row;
+    padding-top: 105px;
+    padding-right: 20px;
+    padding-bottom: 110px;
+    padding-left: 20px;
+  }
+
+  .download-app__wrapper {
+    width: 300px;
+  }
+
+  .download-app h2 {
+    display: block;
+    margin-right: 55px;
+    margin-left: 55px;
+
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .download-app__btn{
+    margin-bottom: 60px;
+  }
+
+  .download-app__os {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app {
+    padding-left: 130px;
+  }
+
+  .download-app__wrapper h2 {
+    font-size: 50px;
+    line-height: 63px;
+  }
+
+  .download-app__btn {
+    width: 100%
+  }
+
+  .download-app__sign {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+

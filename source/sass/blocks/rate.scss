@@ -3,6 +3,10 @@
   background-color: #f2f2f2;
 }
 
+.rate__list {
+  margin: 0 auto;
+}
+
 .rate__main-cell {
   color: #ffffff;
 
@@ -15,4 +19,18 @@
 
 .rate__value {
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .rate__list td {
+    width: 155px;
+    padding: 15px;
+
+    text-transform: none;
+  }
+
+  .rate__list {
+    padding-top: 37px;
+    padding-bottom: 70px;
+  }
 }

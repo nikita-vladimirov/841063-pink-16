@@ -8,3 +8,12 @@
 .minor-title--higher {
   line-height: 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .minor-title {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    font-size: 24px;
+  }
+}

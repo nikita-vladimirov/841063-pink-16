@@ -8,10 +8,44 @@
   text-align: center;
 }
 
+.publication__description br {
+  display: none;
+}
+
 .publication__wrapper {
   padding-bottom: 28px;
 
   text-align: center;
 
   background-color: $bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  .publication__description {
+    font-size: 18px;
+  }
+
+  .publication__description br {
+    display: inline;
+  }
+
+  .publication__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-right: 20px;
+    padding-bottom: 55px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .publication {
+    width: 940px;
+  }
+
+  .publication__wrapper {
+    padding-right: 60px;
+    padding-left: 80px;
+  }
 }

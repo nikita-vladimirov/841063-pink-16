@@ -15,6 +15,49 @@
 
 .contacts__data {
   font-size: 24px;
-
+  font-weight: 300;
   color: $color-red;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    padding-right: 120px;
+    padding-left: 120px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    width: 240px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__list {
+    justify-content: center;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts__item {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .contacts__text {
+    padding-right: 300px;
+    padding-left: 300px;
+
+    font-size: 50px;
+    line-height: normal;
+  }
 }

@@ -31,11 +31,11 @@
     </header>
     <main class="main">
       <h1 class="main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <p class="main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
       <form class="main__form contest-form" action="https://echo.htmlacademy.ru" method="POST">
 
-        <div class="contest-form__wrapper">
-          <fieldset class="contest-form__group">
+        <div class="contest-form__wrapper contest-form__wrapper--half">
+          <fieldset class="contest-form__group contest-form__group--none contest-form__group--half">
             <div class="contest-form__item form-item">
               <label class="form-item__label" for="surname">Фамилия:</label>
               <input class="form-item__input" type="text" id="surname" name="surname" value="Укажите фамилию *">
@@ -95,8 +95,8 @@
           </fieldset>
         </div>
 
-        <div class="contest-form__wrapper contest-form__wrapper--darken">
-          <fieldset class="contest-form__group">
+        <div class="contest-form__wrapper contest-form__wrapper--darken contest-form__wrapper--half contest-form__wrapper--up">
+          <fieldset class="contest-form__group contest-form__group--half">
             <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
             <div class="contest-form__item radio">
               <input class="radio__input visually-hidden" type="radio" id="ios" name="os" checked>
@@ -120,8 +120,11 @@
           </fieldset>
         </div>
 
-        <button class="main__btn" type="submit">Отправить форму</button>
-        <p><span>* </span>&mdash; Обязательные поля</p>
+        <div class="contest-form__submit">
+          <button class="main__btn" type="submit">Отправить форму</button>
+          <p><span>* </span>&mdash; Обязательные поля</p>
+        </div>
+
       </form>
     </main>
     <footer class="footer">

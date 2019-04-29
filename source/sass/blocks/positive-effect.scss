@@ -1,0 +1,38 @@
+.positive-effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .positive-effect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .positive-effect__wrapper {
+    width: 51%;
+  }
+
+  .positive-effect__link {
+    display: inline-block;
+
+    color: $color-red;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .positive-effect__header {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .positive-effect__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .positive-effect__link {
+    font-size: 18px;
+  }
+}

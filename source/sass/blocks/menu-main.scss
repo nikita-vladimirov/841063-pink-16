@@ -3,9 +3,47 @@
   justify-content: space-between;
 
   padding-top: 22px;
-  padding-right: 20px;
+  padding-right: 19px;
   padding-bottom: 20px;
   padding-left: 20px;
 
   border-bottom: solid 1px #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-main__wrapper {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 42px;
+  }
+
+  .menu-main__btn {
+    margin-top: 23px;
+    margin-right: 0;
+    margin-bottom: 21px;
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-main__btn {
+    display: none;
+  }
+
+  .menu-main__wrapper {
+    border: none;
+
+  }
+
+  .menu__item a {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
 }

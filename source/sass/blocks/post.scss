@@ -36,10 +36,81 @@
 
 .post__like {
   display: inline-block;
-  padding-bottom: 15px;
 
   font-size: 12px;
   color: $color-red;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 300px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .posts__item--prime {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+
+    background-color: #ffffff;
+  }
+
+  .post__image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .posts__item--prime .post__image {
+    width: 660px;
+  }
+
+  .post__description {
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+  }
+
+  .posts__item--prime .post__description {
+    width: 620px;
+    margin-left: 20px;
+
+    background-color: $bg-color;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .posts__item--prime {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .posts__item--prime .post__image {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .posts__item--prime .post__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .posts__item--prime .post__comment {
+    order: 1;
+  }
 }
