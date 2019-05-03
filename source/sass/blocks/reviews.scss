@@ -9,6 +9,15 @@
 
 .reviews__list {
   @include no-style;
+
+  margin-top: 43px;
+}
+
+.reviews__text {
+  margin-top: 12px;
+  margin-bottom: 0;
+
+  line-height: 30px;
 }
 
 .reviews__author {

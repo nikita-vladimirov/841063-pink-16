@@ -83,6 +83,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main__description {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .main__description br {
     display: inline;
   }

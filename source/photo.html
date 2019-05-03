@@ -8,30 +8,34 @@
   </head>
   <body>
     <header class="header-main">
-      <nav class="menu-main">
-        <div class="menu-main__wrapper">
-          <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
-          <button class="menu-main__btn" type="button">Меню</button>
-        </div>
-        <ul class="menu menu-main__list" >
-          <li class="menu__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a>Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a href="">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="menu-main">
+          <div class="menu-main__wrapper">
+            <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
+            <button class="menu-main__btn" type="button">Меню</button>
+          </div>
+          <ul class="menu menu-main__list" >
+            <li class="menu__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <h1 class="main__heading">Фотографии пользователей</h1>
-      <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+      <div class="container">
+        <p class="main__description">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+      </div>
       <section class="posts main__posts">
         <figure class="post posts__item posts__item--prime">
           <img class="post__image" src="http://placehold.it/150x100" alt="Вид с моста через реку">
@@ -44,60 +48,62 @@
             <span class="post__like">Нравится: 215</span>
           </figcaption>
         </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Фотография белого автомобиля">
-          <figcaption class="post__description">
-            <b class="post__author">Левон</b>
-            <span class="post__time">(5 часов назад)</span>
-            <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="post__like">Нравится: 356</span>
-          </figcaption>
-        </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Барабаная установка">
-          <figcaption class="post__description">
-            <b class="post__author">Антон</b>
-            <span class="post__time">(12 часов назад)</span>
-            <p class="post__comment">Соседи будут рады!</p>
-            <span class="post__like">Нравится: 666</span>
-          </figcaption>
-        </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Фотография здания снизу">
-          <figcaption class="post__description">
-            <b class="post__author">Борис</b>
-            <span class="post__time">(20 часов назад)</span>
-            <p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="post__like">Нравится: 215</span>
-          </figcaption>
-        </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Кубанская бахча">
-          <figcaption class="post__description">
-            <b class="post__author">Сергей</b>
-            <span class="post__time">(25 часов назад)</span>
-            <p class="post__comment">Самая кубанская в мире!</p>
-            <span class="post__like">Нравится: 4</span>
-          </figcaption>
-        </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Фотография холма">
-          <figcaption class="post__description">
-            <b class="post__author">Максим</b>
-            <span class="post__time">(40 часов назад)</span>
-            <p class="post__comment">Где снег-то?</p>
-            <span class="post__like">Нравится: 150</span>
-          </figcaption>
-        </figure>
-        <figure class="post posts__item">
-          <img class="post__image" src="http://placehold.it/150x100" alt="Крыло самолета">
-          <figcaption class="post__description">
-            <b class="post__author">Надежда</b>
-            <span class="post__time">(45 часов назад)</span>
-            <p class="post__comment">Всем GM и взаимные лайки!</p>
-            <span class="post__like">Нравится: 2560</span>
-          </figcaption>
-        </figure>
+        <div class="container posts__wrapper">
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Фотография белого автомобиля">
+            <figcaption class="post__description">
+              <b class="post__author">Левон</b>
+              <span class="post__time">(5 часов назад)</span>
+              <p class="post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="post__like">Нравится: 356</span>
+            </figcaption>
+          </figure>
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Барабаная установка">
+            <figcaption class="post__description">
+              <b class="post__author">Антон</b>
+              <span class="post__time">(12 часов назад)</span>
+              <p class="post__comment">Соседи будут рады!</p>
+              <span class="post__like">Нравится: 666</span>
+            </figcaption>
+          </figure>
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Фотография здания снизу">
+            <figcaption class="post__description">
+              <b class="post__author">Борис</b>
+              <span class="post__time">(20 часов назад)</span>
+              <p class="post__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="post__like">Нравится: 215</span>
+            </figcaption>
+          </figure>
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Кубанская бахча">
+            <figcaption class="post__description">
+              <b class="post__author">Сергей</b>
+              <span class="post__time">(25 часов назад)</span>
+              <p class="post__comment">Самая кубанская в мире!</p>
+              <span class="post__like">Нравится: 4</span>
+            </figcaption>
+          </figure>
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Фотография холма">
+            <figcaption class="post__description">
+              <b class="post__author">Максим</b>
+              <span class="post__time">(40 часов назад)</span>
+              <p class="post__comment">Где снег-то?</p>
+              <span class="post__like">Нравится: 150</span>
+            </figcaption>
+          </figure>
+          <figure class="post posts__item">
+            <img class="post__image" src="http://placehold.it/150x100" alt="Крыло самолета">
+            <figcaption class="post__description">
+              <b class="post__author">Надежда</b>
+              <span class="post__time">(45 часов назад)</span>
+              <p class="post__comment">Всем GM и взаимные лайки!</p>
+              <span class="post__like">Нравится: 2560</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section class="publication main__publication">
         <p class="publication__description">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
@@ -117,15 +123,17 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <a class="footer__logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип"></a>
-      <ul class="footer__social">
-        <li><a class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
-        <li><a class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
-        <li><a class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
-      </ul>
-      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
-    </footer>
+    <div class="container">
+      <footer class="footer footer--none">
+        <a class="footer__logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="Логотип"></a>
+        <ul class="footer__social">
+          <li><a href="" class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
+        </ul>
+        <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
+      </footer>
+    </div>
   </body>
 </html>

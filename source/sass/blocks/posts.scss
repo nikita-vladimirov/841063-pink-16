@@ -14,4 +14,15 @@
   .posts {
     justify-content: center;
   }
+
+  .posts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .posts__item {
+    margin: 0;
+  }
 }

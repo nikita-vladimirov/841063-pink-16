@@ -4,7 +4,7 @@
 
   padding-top: 22px;
   padding-right: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   padding-left: 20px;
 
   border-bottom: solid 1px #000000;
@@ -37,8 +37,10 @@
   }
 
   .menu-main__wrapper {
-    border: none;
+    width: 330px;
+    padding-left: 0;
 
+    border: none;
   }
 
   .menu__item a {

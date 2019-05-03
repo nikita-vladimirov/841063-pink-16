@@ -8,30 +8,37 @@
   </head>
   <body>
     <header class="header-main">
-      <nav class="menu-main">
-        <div class="menu-main__wrapper">
-          <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
-          <button class="menu-main__btn" type="button">Меню</button>
-        </div>
-        <ul class="menu menu-main__list" >
-          <li class="menu__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a>Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a href="">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="menu-main">
+          <div class="menu-main__wrapper">
+            <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
+            <button class="menu-main__btn" type="button">Меню</button>
+          </div>
+          <ul class="menu menu-main__list" >
+            <li class="menu__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
-      <h1 class="main__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p class="main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+      <h1 class="main__heading">
+        <div class="container">Конкурс на самое безбашенное путешествие с Пинк</div>
+      </h1>
+      <div class="main__description">
+        <div class="container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
+        </div>
+      </div>
       <form class="main__form contest-form" action="https://echo.htmlacademy.ru" method="POST">
 
         <div class="contest-form__wrapper contest-form__wrapper--half">
@@ -127,15 +134,17 @@
 
       </form>
     </main>
-    <footer class="footer">
-      <a class="footer__logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип"></a>
-      <ul class="footer__social">
-        <li><a class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
-        <li><a class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
-        <li><a class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
-      </ul>
-      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
-    </footer>
+    <div class="container">
+      <footer class="footer footer--none">
+        <a class="footer__logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="Логотип"></a>
+        <ul class="footer__social">
+          <li><a href="" class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
+        </ul>
+        <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
+      </footer>
+    </div>
   </body>
 </html>

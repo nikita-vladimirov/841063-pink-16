@@ -8,65 +8,75 @@
   </head>
   <body>
     <header class="header-main">
-      <nav class="menu-main">
-        <div class="menu-main__wrapper">
-          <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
-          <button class="menu-main__btn" type="button">Меню</button>
-        </div>
-        <ul class="menu menu-main__list" >
-          <li class="menu__item">
-            <a>Главная</a>
-          </li>
-          <li class="menu__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="menu__item">
-            <a href="">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="menu-main">
+          <div class="menu-main__wrapper">
+            <a class="logo header-main__logo"><img src="http://placehold.it/75x25" alt="Логотип"></a>
+            <button class="menu-main__btn" type="button">Меню</button>
+          </div>
+          <ul class="menu menu-main__list">
+            <li class="menu__item">
+              <a>Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="index-main">
       <article class="download-app">
-        <div class="download-app__wrapper">
-          <h2>Взгляните на жизнь иначе!</h2>
-          <a href="" class="button download-app__btn">Скачать приложение</a>
-          <div class="download-app__os">
-            <a href="" class="download-app__market-btn">iOS</a>
-            <a href="" class="download-app__market-btn">Android OS</a>
-            <a href="" class="download-app__market-btn">Windows phone</a>
+        <div class="container">
+          <div class="download-app__wrapper">
+            <h2>Взгляните на жизнь иначе!</h2>
+            <a href="" class="button download-app__btn">Скачать приложение</a>
+            <div class="download-app__os">
+              <a href="" class="download-app__market-btn">iOS</a>
+              <a href="" class="download-app__market-btn">Android OS</a>
+              <a href="" class="download-app__market-btn">Windows phone</a>
+            </div>
+            <small class="download-app__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
           </div>
-          <small class="download-app__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
         </div>
       </article>
       <section class="description">
         <p class="description__sign">Устали от серости мегаполиса?</p>
         <p class="description__sign">Нам есть, что вам <br>предложить!</p>
-        <ul class="description__list">
-          <li class="description__item">
-            <h3 class="minor-title">Поднимает настроение</h3>
-            <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="description__item">
-            <h3 class="minor-title">Меняет мир вокруг</h3>
-            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="description__item">
-            <h3 class="minor-title">Заводит новых друзей</h3>
-            <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </section>
-      <section class="positive-effect">
-        <div class="positive-effect__wrapper">
-          <h2 class="positive-effect__header">Эффект на 24 часа!</h2>
-          <p class="positive-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="positive-effect__link" href="">Узнать больше об исследовании</a>
+        <div class="description__wrapper">
+          <div class="container">
+            <ul class="description__list">
+              <li class="description__item">
+                <h3 class="minor-title">Поднимает настроение</h3>
+                <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="description__item">
+                <h3 class="minor-title">Меняет мир вокруг</h3>
+                <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="description__item">
+                <h3 class="minor-title">Заводит новых друзей</h3>
+                <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+      <div class="container">
+        <section class="positive-effect">
+          <div class="positive-effect__wrapper">
+            <h2 class="positive-effect__header">Эффект на 24 часа!</h2>
+            <p class="positive-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="positive-effect__link" href="">Узнать больше об исследовании</a>
+          </div>
+        </section>
+      </div>
       <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
@@ -124,33 +134,37 @@
         </table>
       </section>
       <section class="contacts">
-        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="minor-title">Звоните:</h3>
-            <p class="contacts__data">+7 (812) 555-66-66</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="minor-title">Пишите:</h3>
-            <p class="contacts__data">mail@htmlacademy.ru</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="minor-title">Приезжайте в гости:</h3>
-            <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="minor-title">Звоните:</h3>
+              <p class="contacts__data">+7 (812) 555-66-66</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="minor-title">Пишите:</h3>
+              <p class="contacts__data">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="minor-title">Приезжайте в гости:</h3>
+              <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
         <img class="contacts__map" src="http://placehold.it/150x100" alt="Расположение Пинк на карте">
       </section>
     </main>
-    <footer class="footer footer--none">
-      <a class="footer__logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="Логотип"></a>
-      <ul class="footer__social">
-        <li><a class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
-        <li><a class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
-        <li><a class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
-      </ul>
-      <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
-    </footer>
+    <div class="container">
+      <footer class="footer footer--none">
+        <a class="footer__logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="Логотип"></a>
+        <ul class="footer__social">
+          <li><a href="" class="footer__social-link footer__social-link--tw">Pink в твиттере</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--fb">Pink в фейсбуке</a></li>
+          <li><a href="" class="footer__social-link footer__social-link--yt">Pink на ютубе</a></li>
+        </ul>
+        <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано<span></span></a>
+      </footer>
+    </div>
   </body>
 </html>

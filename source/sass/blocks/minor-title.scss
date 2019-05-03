@@ -1,4 +1,7 @@
 .minor-title {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   font-weight: 700;
 
@@ -11,9 +14,8 @@
 
 @media (min-width: $desktop-width) {
   .minor-title {
-    margin: 0;
     margin-top: 20px;
-    padding: 0;
+
     font-size: 24px;
   }
 }

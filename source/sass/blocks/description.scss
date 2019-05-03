@@ -1,7 +1,7 @@
 .description {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 36px;
 
   text-align: center;
 
@@ -10,11 +10,16 @@
 }
 
 .description__sign {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 22px;
+  margin-left: 0;
   padding-right: 20px;
   padding-left: 20px;
 
   font-size: 24px;
   font-weight: 300;
+  line-height: normal;
 }
 
 .description__sign br {
@@ -24,10 +29,17 @@
 .description__list {
   @include no-style;
 
+  margin-top: 86px;
   padding-right: 20px;
   padding-left: 20px;
 
   background-color: #f2f2f2;
+}
+
+.description__text {
+  margin-top: 12px;
+  margin-bottom: 31px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,16 +79,21 @@
     font-weight: 300;
   }
 
-  .description__list {
-    justify-content: center;
+  .description__wrapper {
     width: 100%;
+    margin-top: 50px;
+
+    background-color: #f2f2f2;
+  }
+
+  .description__list {
+    justify-content: space-between;
+    margin-top: 0;
     padding: 0;
   }
 
   .description__item {
     width: 240px;
-    margin-right: 45px;
-    margin-left: 45px;
     text-align: center;
   }
 
