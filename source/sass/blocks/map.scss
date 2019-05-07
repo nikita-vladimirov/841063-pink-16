@@ -1,0 +1,30 @@
+.map {
+  position: relative;
+  width: 100%;
+
+  z-index: -1;
+}
+
+.map::after {
+  top: 0;
+  content: "";
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+}
+
+.map source {
+  width: 100%;
+}
+
+.map__image {
+  width: 100%;
+  // margin-top: -419px;
+}

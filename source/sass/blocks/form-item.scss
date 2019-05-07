@@ -29,6 +29,14 @@
   border: 2px solid $border-color;
 }
 
+.form-item__input:hover {
+  border-color: $navy-blue;
+}
+
+.form-item__input:active {
+  border-color: $color-red;
+}
+
 @media (min-width: $tablet-width) {
   .form-item {
     align-items: center;

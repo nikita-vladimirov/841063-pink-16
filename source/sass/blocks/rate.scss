@@ -22,6 +22,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .rate {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .rate__list td {
     width: 155px;
     padding: 15px;
@@ -32,5 +37,15 @@
   .rate__list {
     padding-top: 37px;
     padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rate {
+    max-width: 1200px;
+  }
+
+  .rate__list {
+    width: 100%;
   }
 }

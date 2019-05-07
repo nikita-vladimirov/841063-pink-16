@@ -1,0 +1,10 @@
+.logo {
+  width: 147px;
+  margin-left: -72px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    margin-left: 0;
+  }
+}

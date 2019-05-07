@@ -32,6 +32,7 @@
 
 .contest-form__legend {
   width: 240px;
+  padding-bottom: 52px;
 
   line-height: 18px;
   color: $color-red;
@@ -119,9 +120,12 @@
     margin-top: -14px;
   }
 
+  .contest-form__legend {
+    padding-bottom: 0;
+  }
+
   .contest-form__submit {
     width: 100%;
     margin: 0;
   }
 }
-

@@ -24,9 +24,35 @@
   color: $color-red;
 }
 
+.button--red:hover {
+  background-color: $color-red;
+
+  color: #ffffff;
+}
+
+.button--red:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--grey {
   background-color: $bg-color;
   border-color: $color-grey;
 
   color: rgba(40, 54, 69, 0.1);
+}
+
+.button--grey:hover {
+  border-color: $navy-blue;
+
+  color: $navy-blue;
+
+  opacity: 0.3;
+}
+
+.button--grey:active {
+  background-color: $navy-blue;
+
+  color: rgba(255, 255, 255, 0.3);
+
+  opacity: 0.3;
 }

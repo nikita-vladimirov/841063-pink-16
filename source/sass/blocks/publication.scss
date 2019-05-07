@@ -1,3 +1,8 @@
+.publication {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .publication__description {
   padding-top: 50px;
   padding-right: 35px;
@@ -21,6 +26,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .publication {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
   .publication__description {
     font-size: 18px;
   }
@@ -41,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .publication {
-    width: 940px;
+    max-width: 940px;
   }
 
   .publication__wrapper {

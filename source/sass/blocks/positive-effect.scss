@@ -4,13 +4,55 @@
 
 @media (min-width: $tablet-width) {
   .positive-effect {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding-top: 70px;
+    padding-bottom: 25px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: left 59px;
+  }
+
+  .positive-effect::before {
+    content: "24";
+
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+
+    width: 201px;
+    height: 201px;
+
+    font-size: 96px;
+    font-weight: 700;
+    color: $color-red;
+    line-height: 162px;
+    text-align: center;
+    vertical-align: 10px;
+
+    border: 14px solid $color-red;
+    border-radius: 100px;
+
   }
 
   .positive-effect__wrapper {
-    width: 51%;
+    width: 311px;
+  }
+
+  .positive-effect__header {
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .positive-effect__text {
+    margin-top: 0;
+    margin-bottom: 11px;
   }
 
   .positive-effect__link {
@@ -22,11 +64,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .positive-effect__header {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
   .positive-effect__text {
     font-size: 18px;
     line-height: 30px;

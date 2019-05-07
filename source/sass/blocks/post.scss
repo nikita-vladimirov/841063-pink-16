@@ -1,20 +1,22 @@
 .post {
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 0;
 
   text-align: left;
   background-color: $bg-color;
 }
 
 .post__image {
+  width: 100%;
   padding-bottom: 23px;
 }
 
 .post__description {
   margin: 0;
-  padding: 0;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 .post__author {
@@ -25,7 +27,6 @@
 
 .post__time {
   font-size: 12px;
-
   text-transform: uppercase;
 }
 
@@ -43,10 +44,24 @@
   text-transform: uppercase;
 }
 
+.posts__item--prime .post__image {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.posts__item--prime .post__description {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 23px;
+  padding-right: 17px;
+  padding-left: 17px;
+
+  background-color: $bg-color;
+}
+
 @media (min-width: $tablet-width) {
   .post {
     width: 300px;
-    margin-left: 20px;
     padding: 0;
   }
 
@@ -64,10 +79,6 @@
     padding: 0;
   }
 
-  .posts__item--prime .post__image {
-    width: 660px;
-  }
-
   .post__description {
     margin: 0;
     padding-top: 30px;
@@ -78,11 +89,9 @@
 
   .posts__item--prime .post__description {
     width: 620px;
-    margin-left: 20px;
 
     background-color: $bg-color;
   }
-
 }
 
 @media (min-width: $desktop-width) {

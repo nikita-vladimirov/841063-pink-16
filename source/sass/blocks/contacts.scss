@@ -1,28 +1,33 @@
 .contacts {
-  margin-top: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 20px;
 
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .contacts__text {
   margin: 0;
 
   font-size: 24px;
-  line-height: normal;
+  line-height: 31px;
   font-weight: 300;
 }
 
 .contacts__list {
   @include no-style;
 
-  margin-top: 29px;
+  margin-top: 32px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .contacts__item {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  background-color: #ffffff;
 }
 
 .contacts__data {
@@ -30,13 +35,8 @@
 
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 31px;
   color: $color-red;
-}
-
-.contacts__map {
-  margin-top: 20px;
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

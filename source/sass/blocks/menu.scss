@@ -1,5 +1,7 @@
 .menu {
   @include no-style;
+  // display: none;
+  margin-bottom: 65px
 }
 
 .menu__item a {
@@ -17,6 +19,21 @@
   text-transform: uppercase;
 }
 
+.menu__item:hover a {
+  color: $color-red;
+}
+
+.menu__item:active a {
+  color: $color-red;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .menu {
     display: flex;
@@ -26,6 +43,17 @@
   }
 
   .menu__item a {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 0;
+    padding-bottom: 15px;
+
     border: none;
+  }
+
+  .menu__item--active a {
+    border-bottom: 2px solid #ffffff;
   }
 }
