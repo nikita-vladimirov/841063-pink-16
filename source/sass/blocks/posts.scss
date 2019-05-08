@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   max-width: 1200px;
+  margin-top: 12px;
 }
 
 .posts__wrapper {
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -24,9 +25,9 @@
   right: 0;
 
   margin-right: 20px;
-  padding-top: 13px;
+  padding-top: 6px;
   padding-right: 20px;
-  padding-bottom: 13px;
+  padding-bottom: 6px;
   padding-left: 20px;
 
   background-color: $color-red;
@@ -41,9 +42,15 @@
 @media (min-width: $tablet-width) {
   .posts__wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    max-width: 620px;
+    margin-top: 30px;
+  }
+
+  .posts__panorama-sign {
+    top: 57px;
   }
 }
 
@@ -56,7 +63,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 940px;
+    margin-top: 50px;
   }
 
   .posts__item {
@@ -64,6 +72,8 @@
   }
 
   .posts__panorama-sign {
-    margin-right: 10px;
+    top: 54px;
+
+    margin-right: 130px;
   }
 }

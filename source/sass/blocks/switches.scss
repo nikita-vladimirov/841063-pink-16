@@ -24,3 +24,15 @@
   border-radius: 6px;
   opacity: 1;
 }
+
+@media (min-width: 660px) {
+  .rate .switches {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .switches {
+    display: none;
+  }
+}

@@ -18,7 +18,7 @@
   width: 25px;
 }
 
-.menu-main__btn div {
+.menu-main__btn span {
   position: relative;
 
   width: 50px;
@@ -26,8 +26,8 @@
   background-color: #ffffff;
 }
 
-.menu-main__btn div::after,
-.menu-main__btn div::before {
+.menu-main__btn span::after,
+.menu-main__btn span::before {
   content: "";
 
   position: absolute;
@@ -38,25 +38,25 @@
   background-color: #ffffff;
 }
 
-.menu-main__btn div::after {
+.menu-main__btn span::after {
   transform: translateY(10px);
 }
 
-.menu-main__btn div::before {
+.menu-main__btn span::before {
   transform: translateY(-10px);
 }
 
-.menu-main__btn--close div::after {
+.menu-main__btn--close span::after {
   transform: rotate(45deg);
   width: 30px;
 }
 
-.menu-main__btn--close div::before {
+.menu-main__btn--close span::before {
   transform: rotate(-45deg);
   width: 30px;
 }
 
-.menu-main__btn--close div {
+.menu-main__btn--close span {
   height: 0;
 }
 
@@ -84,9 +84,9 @@
 @media (min-width: $tablet-width) {
   .menu-main__wrapper {
     padding-top: 27px;
-    padding-right: 0;
+    padding-right: 20px;
     padding-bottom: 32px;
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   .menu-main__btn {
@@ -98,9 +98,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .menu-main__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
   .menu-main {
     display: flex;
     flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+    background-color: rgba(37, 50, 63, 0.3);
   }
 
   .menu-main__btn {
@@ -108,13 +119,20 @@
   }
 
   .menu-main__wrapper {
-    width: 330px;
+    width: 318px;
     padding-left: 0;
 
     border: none;
   }
 
+  .menu-main__list {
+    width: 622px;
+    padding-top: 46px;
+  }
+
   .menu__item a {
+    margin: 0;
+
     line-height: 18px;
     font-weight: 400;
     text-transform: none;

@@ -6,8 +6,9 @@
 .checkbox__label {
   position: relative;
 
-  padding-left: 40px;
-  padding-bottom: 63px;
+  padding-top: 2px;
+  padding-left: 70px;
+  padding-bottom: 0;
 
   font-size: 18px;
   color: #283645;
@@ -19,8 +20,8 @@
   top: -5px;
   left: 0;
 
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
 
   background-color: #ffffff;
 
@@ -48,4 +49,11 @@
 
 .checkbox__input:checked:active + .checkbox__label::before {
   border-color: $color-red;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox__label {
+    padding-left: 57px;
+    margin-left: 60px;
+  }
 }

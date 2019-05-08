@@ -1,13 +1,19 @@
 .edit__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 200px;
+  width: 240px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-bottom: 72px;
 
   border-bottom: 1px solid $color-grey;
+}
+
+
+.edit__filter {
+  margin-bottom: 10px;
 }
 
 .edit__filter svg {
@@ -37,16 +43,21 @@
 .edit__range {
   position: relative;
 
+  display: none;
   width: 240px;
   height: 2px;
   margin-top: 20px;
   background-color: #000000;
 }
 
+.edit__range--active {
+  display: block;
+}
+
 .edit__toggle {
   position: absolute;
   top: -7px;
-  right: 40px;
+  right: 32px;
 
   width: 15px;
   height: 15px;
@@ -69,19 +80,89 @@
     align-content: center;
   }
 
+  .edit__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid $color-grey;
+  }
+
   .edit__wrapper {
+    width: 275px;
+    margin-top: 1px;
+    margin-bottom: 53px;
+    margin-left: 47px;
+
     border: none;
   }
 
   .edit__filter {
-    height: 20px;
-    border-bottom: 1px solid $color-grey;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+
+  .edit__filter svg {
+    width: 24px;
+    height: auto;
+  }
+
+  .edit__filter--lighting {
+    padding-left: 4px;
+  }
+
+  .edit__filter--lighting svg {
+    width: 17px;
+  }
+
+  .edit__range {
+    display: inline-block;
+
+    width: 202px;
+    margin: 0;
+    margin-right: 19px;
+  }
+
+  .edit__button-list {
+    margin-left: 32px;
+  }
+
+  .edit__button {
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .edit {
     justify-content: space-between;
+  }
+
+  .edit__wrapper {
+    width: 410px;
+    margin-top: -11px;
+    margin-left: 31px;
+  }
+
+  .edit__container {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+  }
+
+  .edit__filter svg {
+    width: 48px;
+    height: auto;
+  }
+
+  .edit__filter--lighting svg {
+    width: 34px;
+  }
+
+  .edit__range {
+    width: 288px;
+    margin-right: 28px;
   }
 
   .edit__button-list {

@@ -15,8 +15,12 @@
 
 @media (min-width: $desktop-width) {
   .minor-title {
-    margin-top: 20px;
+    margin-top: 36px;
 
+    font-size: 18px;
+  }
+
+  .minor-title--higher {
     font-size: 24px;
   }
 }

@@ -50,7 +50,38 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 940px;
+    position: relative;
+
+    width: 960px;
+    padding: 0;
+    padding-top: 131px;
+  }
+
+  .reviews::after,
+  .reviews::before {
+    content: "";
+
+    position: absolute;
+    top: 57%;
+
+    width: 22px;
+    height: 41px;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .reviews::after {
+    right: 10px;
+
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .reviews::before {
+    left: 10px;
+
+    background-image: url("../img/icon-review-arrow-left.svg");
   }
 
   .reviews__item {

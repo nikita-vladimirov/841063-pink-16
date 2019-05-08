@@ -1,7 +1,13 @@
 .menu {
   @include no-style;
+
   // display: none;
-  margin-bottom: 65px
+
+  background-color: $navy-blue;
+}
+
+.menu--index {
+  margin-bottom: 65px;
 }
 
 .menu__item a {
@@ -40,6 +46,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
+    background-color: rgba(37, 50, 63, 0.3);
   }
 
   .menu__item a {
