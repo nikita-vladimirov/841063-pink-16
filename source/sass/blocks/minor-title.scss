@@ -1,5 +1,9 @@
 .minor-title {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
 
   color: #000000;
@@ -7,4 +11,16 @@
 
 .minor-title--higher {
   line-height: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .minor-title {
+    margin-top: 36px;
+
+    font-size: 18px;
+  }
+
+  .minor-title--higher {
+    font-size: 24px;
+  }
 }

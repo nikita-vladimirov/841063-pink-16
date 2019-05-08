@@ -1,11 +1,140 @@
+.menu-main {
+  z-index: 1;
+  background-color: rgba(40, 54, 69, 0.7);
+}
+
+.menu-main__btn {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  font-size: 0;
+}
+
+.menu-main__btn--close {
+  width: 25px;
+}
+
+.menu-main__btn span {
+  position: relative;
+
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.menu-main__btn span::after,
+.menu-main__btn span::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.menu-main__btn span::after {
+  transform: translateY(10px);
+}
+
+.menu-main__btn span::before {
+  transform: translateY(-10px);
+}
+
+.menu-main__btn--close span::after {
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.menu-main__btn--close span::before {
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.menu-main__btn--close span {
+  height: 0;
+}
+
+.menu-main__btn:hover path {
+  fill: $color-red;
+}
+
+.menu-main__btn:active path {
+  fill: $color-red;
+  opacity: 0.3;
+}
+
 .menu-main__wrapper {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 22px;
+  padding-top: 6px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   padding-left: 20px;
 
   border-bottom: solid 1px #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-main__wrapper {
+    padding-top: 27px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+  }
+
+  .menu-main__btn {
+    margin-top: 23px;
+    margin-right: 0;
+    margin-bottom: 21px;
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-main__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .menu-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+    background-color: rgba(37, 50, 63, 0.3);
+  }
+
+  .menu-main__btn {
+    display: none;
+  }
+
+  .menu-main__wrapper {
+    width: 318px;
+    padding-left: 0;
+
+    border: none;
+  }
+
+  .menu-main__list {
+    width: 622px;
+    padding-top: 46px;
+  }
+
+  .menu__item a {
+    margin: 0;
+
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
 }

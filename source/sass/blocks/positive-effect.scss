@@ -1,0 +1,127 @@
+.positive-effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .positive-effect {
+    display: block;
+    max-width: 660px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .positive-effect__container {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 25px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: left 59px;
+  }
+
+  .positive-effect__container::before {
+    content: "24";
+
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+
+    width: 201px;
+    height: 201px;
+
+    font-size: 96px;
+    font-weight: 700;
+    color: $color-red;
+    line-height: 162px;
+    text-align: center;
+    vertical-align: 10px;
+
+    border: 14px solid $color-red;
+    border-radius: 100px;
+  }
+
+  .positive-effect__wrapper {
+    width: 311px;
+  }
+
+  .positive-effect__header {
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .positive-effect__text {
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+
+  .positive-effect__link {
+    display: inline-block;
+
+    color: $color-red;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .positive-effect {
+    max-width: 1200px;
+    padding-bottom: 37px;
+
+    background-color: $bg-color;
+  }
+
+  .positive-effect__container {
+    width: 960px;
+    padding-top: 115px;
+    padding-right: 55px;
+    padding-bottom: 75px;
+
+    background-size: 298px 345px;
+    background-position: 10px 50px;
+  }
+
+  .positive-effect__container::before {
+    left: 32px;
+    bottom: 53px;
+
+    width: 252px;
+    height: 252px;
+
+    font-size: 119px;
+    line-height: 213px;
+
+    border-radius: 126px;
+  }
+
+  .positive-effect__wrapper {
+    width: 530px;
+  }
+
+  .positive-effect__header {
+    margin-bottom: 21px;
+  }
+
+  .positive-effect__header br {
+    display: none;
+  }
+
+  .positive-effect__text {
+    margin-bottom: 35px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .positive-effect__link {
+    font-size: 18px;
+  }
+}

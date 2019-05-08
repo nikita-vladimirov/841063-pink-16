@@ -1,0 +1,15 @@
+.background {
+  margin-top: -65px;
+  height: calc(462px - 65px);
+
+  background-color: $navy-blue;
+  background-repeat: no-repeat;
+  background-position: center -65px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+@media (min-width: $tablet-width) {
+  .background {
+    display: none;
+  }
+}

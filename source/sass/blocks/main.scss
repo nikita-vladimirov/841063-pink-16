@@ -1,44 +1,120 @@
-.main__heading {
-  margin: 0;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-bottom: 85px;
-  padding-left: 20px;
-
-  background-color: $navy-blue;
-
-  line-height: 30px;
-  font-weight: 400;
-  text-align: center;
-  font-size: 24px;
-  color: #ffffff;
+.main {
+  margin-bottom: 19px;
 }
 
 .main__description {
-  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 13px;
+  padding-top: 46px;
   padding-right: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 23px;
   padding-left: 20px;
 
   text-align: center;
   line-height: 30px;
 }
 
+.main__description span {
+  display: none;
+}
+
 .main__posts {
-  padding-right: 20px;
-  padding-left: 20px;
+  margin: 0 auto;
 }
 
 .main__btn {
   width: 280px;
   margin: 0;
-  padding: 23px;
+  padding: 17px;
 
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #2aab6d;
   border: none;
+}
+
+.main__btn:hover {
+  background-color: #1c9b5e;
+}
+
+.main__btn:active {
+  background-color: #1c9b5e;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main__btn:disabled {
+  background-color: $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main__heading {
+    max-width: 660px;
+    padding-top: 66px;
+    padding-bottom: 75px;
+
+    font-size: 50px;
+    line-height: 63px;
+  }
+
+  .main__description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 52px;
+    padding-right: 80px;
+    padding-bottom: 36px;
+    padding-left: 80px;
+
+    font-size: 18px;
+  }
+
+  .main__description span {
+    display: inline;
+  }
+
+  .main__description br {
+    display: none;
+  }
+
+  .main__posts {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main__btn {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__heading {
+    max-width: 1200px;
+  }
+
+  .main__description {
+    max-width: 1200px;
+    margin-bottom: 52px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main__description br {
+    display: inline;
+  }
+
+  .main__publication {
+    margin: 0 auto;
+  }
+
+  .main__btn {
+    width: 296px;
+    padding-top: 23px;
+    padding-right: 55px;
+    padding-bottom: 23px;
+    padding-left: 55px;
+  }
 }

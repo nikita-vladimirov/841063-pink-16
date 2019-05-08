@@ -1,12 +1,20 @@
 .menu {
   @include no-style;
+
+  // display: none;
+
+  background-color: $navy-blue;
+}
+
+.menu--index {
+  margin-bottom: 65px;
 }
 
 .menu__item a {
   display: block;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-right: 10px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   padding-left: 10px;
 
   color: #ffffff;
@@ -15,4 +23,44 @@
   border-bottom: solid 1px #000000;
   text-align: center;
   text-transform: uppercase;
+}
+
+.menu__item:hover a {
+  color: $color-red;
+}
+
+.menu__item:active a {
+  color: $color-red;
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .menu {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: rgba(37, 50, 63, 0.3);
+  }
+
+  .menu__item a {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 0;
+    padding-bottom: 15px;
+
+    border: none;
+  }
+
+  .menu__item--active a {
+    border-bottom: 2px solid #ffffff;
+  }
 }

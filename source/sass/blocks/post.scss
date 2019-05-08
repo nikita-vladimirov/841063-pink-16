@@ -1,20 +1,23 @@
 .post {
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 0;
 
   text-align: left;
   background-color: $bg-color;
 }
 
 .post__image {
-  padding-bottom: 23px;
+  width: 100%;
+  padding-bottom: 11px;
 }
 
 .post__description {
   margin: 0;
-  padding: 0;
+  padding-right: 17px;
+  padding-bottom: 20px;
+  padding-left: 17px;
 }
 
 .post__author {
@@ -25,21 +28,117 @@
 
 .post__time {
   font-size: 12px;
-
   text-transform: uppercase;
 }
 
 .post__comment {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
 }
 
 .post__like {
   display: inline-block;
-  padding-bottom: 15px;
 
   font-size: 12px;
   color: $color-red;
 
   text-transform: uppercase;
+}
+
+.posts__item--prime .post__image {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.posts__item--prime .post__description {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 17px;
+  padding-left: 17px;
+
+  background-color: $bg-color;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 300px;
+    padding: 0;
+  }
+
+  .posts__item--prime {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+
+    background-color: #ffffff;
+  }
+
+  .post__image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .post__description {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    margin: 0;
+    padding-top: 17px;
+    padding-right: 27px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+  }
+
+  .posts__item--prime .post__description {
+    width: 620px;
+    min-height: auto;
+    padding-top: 23px;
+    padding-right: 27px;
+    padding-bottom: 17px;
+    padding-left: 27px;
+
+    background-color: $bg-color;
+  }
+
+  .posts__item--prime .post__like {
+    position: absolute;
+    top: 25px;
+    right: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 52px;
+  }
+
+  .posts__item--prime {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .posts__item--prime .post__image {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .posts__item--prime .post__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  .posts__item--prime .post__comment {
+    order: 1;
+  }
 }
