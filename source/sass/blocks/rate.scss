@@ -1,5 +1,5 @@
 .rate {
-  width: 620px;
+  width: 320px;
   margin: 0 auto;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -11,13 +11,51 @@
   position: relative;
   overflow-x: hidden;
 
+  display: flex;
+
   width: 100%;
+
+  text-align: center;
+}
+
+.rate__list tbody {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  transform: translateX(-260px);
+}
+
+.rate__line {
+  display: flex;
+
+  overflow-x: hidden;
+}
+
+.rate__empty-cel {
+  display: none;
+}
+
+.rate__line th,
+.rate__line td {
+  min-width: 280px;
+}
+
+.rate__line td {
+  border: 1px solid $bg-color;
 }
 
 .rate__main-cell {
   color: #ffffff;
 
   background-color: $navy-blue;
+
+  border-right: 1px solid $bg-color;
+  border-left: 1px solid $bg-color;
+}
+
+.rate__value {
+  text-align: right;
 }
 
 .rate__cost {
@@ -27,7 +65,8 @@
 .rate__value-header {
   position: absolute;
 
-  left: 20px;
+  left: 290px;
+  text-align: left;
 }
 
 .rate__value {
