@@ -126,6 +126,10 @@
   border: 2px solid $color-grey;
 }
 
+.contest-form__submit {
+  width: 320px;
+}
+
 .contest-form__submit p {
   width: 220px;
   margin: 0 auto;
@@ -183,6 +187,10 @@
 
   .contest-form__legend--none {
     display: inline;
+  }
+
+  .contest-form__submit {
+    width: 660px;
   }
 
   .contest-form__submit p {

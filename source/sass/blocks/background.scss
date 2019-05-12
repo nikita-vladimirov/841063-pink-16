@@ -1,11 +1,29 @@
 .background {
+  position: relative;
+
+  width: 100%;
+  height: calc(451px - 55px);
   margin-top: -65px;
-  height: calc(462px - 65px);
 
   background-color: $navy-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.background::before {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 258px;
+  height: 287px;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {

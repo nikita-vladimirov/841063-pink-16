@@ -1,4 +1,6 @@
 .edit__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -6,11 +8,10 @@
   width: 240px;
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 72px;
+  margin-bottom: 18px;
 
   border-bottom: 1px solid $color-grey;
 }
-
 
 .edit__filter {
   margin-bottom: 10px;
@@ -41,8 +42,6 @@
 }
 
 .edit__range {
-  position: relative;
-
   display: none;
   width: 240px;
   height: 2px;
@@ -51,6 +50,10 @@
 }
 
 .edit__range--active {
+  position: absolute;
+  left: -4px;
+  top: 66px;
+
   display: block;
 }
 
@@ -71,6 +74,10 @@
 
 .edit__toggle:active {
   background-color: $color-red;
+}
+
+.edit__button-list {
+  margin-top: 96px;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +125,18 @@
     width: 17px;
   }
 
+  .edit__filter--crop .edit__toggle {
+    top: 30px;
+  }
+
+  .edit__filter--fill .edit__toggle {
+
+  }
+
+  .edit__filter--lighting .edit__toggle {
+
+  }
+
   .edit__range {
     display: inline-block;
 
@@ -126,7 +145,12 @@
     margin-right: 19px;
   }
 
+  .edit__range--active {
+    position: static;
+  }
+
   .edit__button-list {
+    margin-top: 0;
     margin-left: 32px;
   }
 
