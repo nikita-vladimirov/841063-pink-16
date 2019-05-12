@@ -57,7 +57,7 @@
 
 .rate__line th,
 .rate__line td {
-  min-width: 280px;
+  width: 280px;
 }
 
 .rate__value {
@@ -176,8 +176,7 @@
 
   .rate__line th,
   .rate__line td {
-    min-width: 155px;
-    max-width: 155px;
+    width: 155px;
   }
 
   .rate__empty-cell {
@@ -187,6 +186,11 @@
   .rate__main-cell {
     padding-top: 12px;
     padding-bottom: 11px;
+  }
+
+  .rate__main-cell--hit {
+    border-right: 2px solid $bg-color;
+    border-left: 2px solid $bg-color;
   }
 
   .rate__main-cell--hit::before {
@@ -230,10 +234,46 @@
 
 @media (min-width: $desktop-width) {
   .rate {
-    max-width: 1200px;
+    width: 1200px;
+    padding-bottom: 74px;
   }
 
   .rate__list {
     width: 100%;
+    padding-top: 141px;
+  }
+
+  .rate__list tbody{
+    width: 940px;
+  }
+
+  .rate__line th,
+  .rate__line td {
+    width: 235px;
+  }
+
+  .rate__main-cell {
+    padding-top: 16px;
+    padding-bottom: 21px;
+  }
+
+  .rate__header {
+    font-size: 18px;
+  }
+
+  .rate__cost {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .rate__value-header {
+    padding-top: 13px;
+    padding-left: 23px;
+
+    font-size: 18px;
+  }
+
+  .rate__value {
+    min-height: 60px;
   }
 }

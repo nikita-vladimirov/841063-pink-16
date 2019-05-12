@@ -32,6 +32,10 @@
     width: 620px;
   }
 
+  .reviews__list {
+    margin-bottom: 0;
+  }
+
   .reviews__item {
     @include no-style;
 
