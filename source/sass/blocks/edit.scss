@@ -101,7 +101,7 @@
   .edit__wrapper {
     width: 275px;
     margin-top: 1px;
-    margin-bottom: 53px;
+    margin-bottom: 29px;
     margin-left: 47px;
 
     border: none;
@@ -125,19 +125,9 @@
     width: 17px;
   }
 
-  .edit__filter--crop .edit__toggle {
-    top: 30px;
-  }
-
-  .edit__filter--fill .edit__toggle {
-
-  }
-
-  .edit__filter--lighting .edit__toggle {
-
-  }
-
   .edit__range {
+    position: relative;
+
     display: inline-block;
 
     width: 202px;
@@ -150,8 +140,8 @@
   }
 
   .edit__button-list {
-    margin-top: 0;
-    margin-left: 32px;
+    margin-top: 53px;
+    margin-left: 0;
   }
 
   .edit__button {

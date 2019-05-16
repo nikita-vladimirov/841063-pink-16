@@ -37,12 +37,31 @@
 }
 
 .post__like {
+  position: relative;
+
   display: inline-block;
+  margin-left: 31px;
 
   font-size: 12px;
   color: $color-red;
 
   text-transform: uppercase;
+}
+
+.post__like::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -31px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-heart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .posts__item--prime .post__image {
@@ -80,6 +99,10 @@
     padding: 0;
   }
 
+  .posts__item--prime .post__image {
+    min-height: 509px;
+  }
+
   .post__description {
     position: relative;
 
@@ -92,6 +115,14 @@
     padding-right: 27px;
     padding-bottom: 25px;
     padding-left: 27px;
+  }
+
+  .post__like {
+    margin-left: 0;
+  }
+
+  .post__like::before {
+    left: 228px;
   }
 
   .posts__item--prime .post__description {
