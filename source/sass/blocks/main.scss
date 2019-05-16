@@ -23,8 +23,9 @@
 }
 
 .main__btn {
+  display: block;
   width: 280px;
-  margin: 0;
+  margin: 0 auto;
   padding: 17px;
 
   font-size: 18px;
@@ -62,8 +63,10 @@
   }
 
   .main__description {
+    width: 660px;
+    margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
     padding-top: 52px;
     padding-right: 80px;
     padding-bottom: 36px;
@@ -87,6 +90,7 @@
 
   .main__btn {
     width: 300px;
+    margin: 0;
   }
 }
 
@@ -96,8 +100,8 @@
   }
 
   .main__description {
-    max-width: 1200px;
-    margin-bottom: 52px;
+    width: 940px;
+    margin-bottom: 40px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -111,10 +115,10 @@
   }
 
   .main__btn {
-    width: 296px;
-    padding-top: 23px;
+    width: 300px;
+    padding-top: 17px;
     padding-right: 55px;
-    padding-bottom: 23px;
+    padding-bottom: 16px;
     padding-left: 55px;
   }
 }

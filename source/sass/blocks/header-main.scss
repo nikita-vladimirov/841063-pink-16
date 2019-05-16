@@ -11,9 +11,6 @@
 }
 
 .header-main__heading {
-  margin-top: -65px;
-  padding-top: 65px;
-
   background-color: $navy-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -79,7 +76,8 @@
   }
 
   .header-main__heading h1 {
-    max-width: 940px;
+    max-width: 930px;
+    min-height: 293px;
     padding-top: 70px;
     padding-bottom: 97px;
   }
