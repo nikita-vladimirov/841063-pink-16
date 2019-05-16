@@ -44,6 +44,12 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 540px;
+
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 50%;
+  }
 }
 
 .description__wrapper {
@@ -137,6 +143,10 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
   }
 
   .description__item {
@@ -185,30 +195,40 @@
     padding-left: 30px;
   }
 
-  .description__item:first-child {
-    background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-
-  .description__item:nth-child(2) {
-    background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-
-  .description__item:last-child {
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-
   .description__item {
     width: 240px;
     margin-top: 0;
     padding-top: 320px;
 
     text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
+
+  .description__item:first-child {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
+  }
+
+  .description__item:nth-child(2) {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
+  }
+
+  .description__item:last-child {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 
   .description__item h3 {

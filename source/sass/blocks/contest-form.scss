@@ -177,16 +177,14 @@
     background-color: #ffffff;
   }
 
-  // .contest-form__wrapper--half {
-  //   order: -1;
-  // }
-
   .contest-form__submit {
     display: flex;
     justify-content: space-between;
     width: 620px;
     margin-right: 20px;
     margin-left: 20px;
+
+    order: 5;
   }
 
   .contest-form__legend {
@@ -340,10 +338,6 @@
       padding-bottom: 115px;
     }
   }
-
-  .contest-form__submit {
-    order: 5;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -385,11 +379,6 @@
     padding-bottom: 0;
   }
 
-  .contest-form__submit {
-    width: 100%;
-    margin: 0;
-  }
-
   .contest-form__wrapper--contacts {
     .contest-form__inner {
       display: flex;
@@ -427,6 +416,7 @@
       order: -1;
     }
   }
+
   .contest-form__wrapper--emotions {
     padding-bottom: 66px;
 
@@ -441,13 +431,16 @@
   }
 
   .contest-form__submit {
+    width: 100%;
+    margin: 0;
+
     p {
-    width: 400px;
+      width: 400px;
     }
 
     .main__full {
-    display: inline;
-    color: $navy-blue;
+      display: inline;
+      color: $navy-blue;
     }
   }
 }

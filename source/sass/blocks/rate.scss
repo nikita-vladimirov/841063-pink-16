@@ -60,10 +60,6 @@
   width: 280px;
 }
 
-.rate__value {
-  border: 1px solid $bg-color;
-}
-
 .rate__main-cell {
   position: relative;
 
@@ -138,6 +134,7 @@
 .rate__value {
   min-height: 60px;
 
+  border: 1px solid $bg-color;
   background-color: #ffffff;
   background-position: 230px center;
   background-size: 30px;
@@ -171,14 +168,12 @@
   .rate__list tbody {
     width: 620px;
     margin: 0 auto;
+
+    transform: translateX(0);
   }
 
   .rate__list * {
     overflow: visible;
-  }
-
-  .rate__list tbody {
-    transform: translateX(0);
   }
 
   .rate__list td {
@@ -263,7 +258,7 @@
     padding-top: 162px;
   }
 
-  .rate__list tbody{
+  .rate__list tbody {
     width: 940px;
   }
 
