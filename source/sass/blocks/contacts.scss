@@ -39,6 +39,17 @@
   color: $color-red;
 }
 
+.contacts__data--mail:hover,
+.contacts__data--mail:focus {
+  color: $navy-blue;
+  text-decoration: underline #000000;
+}
+
+.contacts__data--mail:active {
+  opacity: 0.3;
+  text-decoration: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     max-width: 660px;

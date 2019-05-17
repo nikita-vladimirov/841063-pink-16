@@ -55,12 +55,14 @@
   height: 0;
 }
 
-.menu-main__btn:hover path {
-  fill: $color-red;
+.menu-main__btn:hover .menu-main__btn-span::after,
+.menu-main__btn:hover .menu-main__btn-span::before,
+.menu-main__btn:focus .menu-main__btn-span {
+  background-color: $color-red;
 }
 
-.menu-main__btn:active path {
-  fill: $color-red;
+.menu-main__btn:active .menu-main__btn-span {
+  background-color: $color-red;
   opacity: 0.3;
 }
 

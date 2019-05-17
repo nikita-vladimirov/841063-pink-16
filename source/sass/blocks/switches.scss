@@ -7,13 +7,23 @@
 }
 
 .switches__item {
-  background-color: #ffffff;
+  padding: 0;
 
+  background-color: #ffffff;
   border: 3px solid $navy-blue;
   border-radius: 3px;
   opacity: 0.3;
 
   align-self: center;
+}
+
+.switches__item:hover,
+.switches__item:focus {
+  opacity: 0.6;
+}
+
+.switches__item:active {
+  opacity: 0.1;
 }
 
 .switches__item--now {

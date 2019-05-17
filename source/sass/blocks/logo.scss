@@ -3,6 +3,22 @@
   margin-left: -72px;
 }
 
+.logo:hover g,
+.logo:hover path,
+.logo:focus g,
+.logo:focus path {
+  fill: $color-red;
+}
+
+.logo:active {
+  .icon-header {
+    opacity: 0.3;
+  }
+  g, path {
+    fill: #ffffff;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     margin-left: 0;

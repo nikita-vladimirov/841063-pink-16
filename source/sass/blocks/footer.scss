@@ -16,14 +16,17 @@
   padding-bottom: 34px;
 }
 
-.footer__logo:hover .footer__logo-letter {
+.footer__logo:hover g,
+.footer__logo:hover path,
+.footer__logo:focus g,
+.footer__logo:focus path {
   fill: $color-red;
 }
 
 .footer__logo:active {
   opacity: 0.3;
 
-  .footer__logo-letter {
+  .icon-footer__letters {
     fill: $navy-blue;
   }
 }

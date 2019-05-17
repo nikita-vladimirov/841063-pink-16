@@ -174,10 +174,14 @@
             <p class="reviews__text"></p>
           </li>
         </ul>
+        <div class="reviews-btn">
+          <button class="reviews-btn__item reviews-btn__item--back" aria-label="Предыдущий комментарий"></button>
+          <button class="reviews-btn__item reviews-btn__item--forwards" aria-label="Следующий комментарий"></button>
+        </div>
         <div class="switches">
-          <div class="switches__item switches__item--now"></div>
-          <div class="switches__item switches__item--back"></div>
-          <div class="switches__item switches__item--forwards"></div>
+          <button class="switches__item switches__item--now" aria-label="Первый комментарий"></button>
+          <button class="switches__item switches__item--back" aria-label="Второй комментарий"></button>
+          <button class="switches__item switches__item--forwards" aria-label="Третий комментарий"></button>
         </div>
       </section>
       <section class="rate">
@@ -217,9 +221,9 @@
           </tr>
         </table>
         <div class="switches">
-          <div class="switches__item switches__item--back"></div>
-          <div class="switches__item switches__item--now"></div>
-          <div class="switches__item switches__item--forwards"></div>
+          <button class="switches__item switches__item--back" aria-label="Левая часть таблицы"></button>
+          <button class="switches__item switches__item--now" aria-label="Центральная часть таблицы"></button>
+          <button class="switches__item switches__item--forwards" aria-label="Правая часть таблицы"></button>
         </div>
       </section>
       <section class="contacts">
@@ -231,7 +235,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="minor-title">Пишите:</h3>
-              <p class="contacts__data">mail@htmlacademy.ru</p>
+              <p class="contacts__data contacts__data--mail">mail@htmlacademy.ru</p>
             </li>
             <li class="contacts__item">
               <h3 class="minor-title">Приезжайте в гости:</h3>
