@@ -1,7 +1,7 @@
 .description {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding-top: 39px;
 
@@ -93,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .description {
-    max-width: 660px;
+    width: 660px;
     padding-top: 50px;
   }
 
@@ -162,7 +162,7 @@
 
 @media (min-width: $desktop-width) {
   .description {
-    max-width: 1200px;
+    width: 100%;
     padding-top: 66px;
   }
 
@@ -177,7 +177,6 @@
 
   .description__wrapper {
     width: 100%;
-    max-width: 1200px;
     margin-top: 74px;
 
     background-color: #f2f2f2;
@@ -185,6 +184,10 @@
 
   .description__wrapper::after {
     display: none;
+  }
+
+  .description__wrapper::before {
+    height: 100%;
   }
 
   .description__list {

@@ -1,7 +1,7 @@
 .posts {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
   margin-top: 12px;
 }
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .posts {
-    max-width: 660px;
+    width: 660px;
   }
 
   .posts__wrapper {
@@ -63,7 +63,6 @@
   .posts {
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
   }
 
   .posts__wrapper {

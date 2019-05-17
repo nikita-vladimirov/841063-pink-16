@@ -305,6 +305,7 @@
 
   .contest-form__wrapper--app {
     order: 1;
+    width: 660px;
     margin-top: 1px;
     margin-bottom: 21px;
     padding-bottom: 31px;
@@ -355,9 +356,17 @@
     padding-left: 0;
   }
 
+  .contest-form__group {
+    width: 940px;
+  }
+
   .contest-form__wrapper--half {
     width: 435px;
     margin: 0;
+
+    .contest-form__group {
+      width: 435px;
+    }
   }
 
   .contest-form__wrapper--up {
@@ -383,7 +392,6 @@
     .contest-form__inner {
       display: flex;
       justify-content: center;
-      width: 100%;
     }
 
     .contest-form__item {
@@ -398,7 +406,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      width: 100%;
       margin: 0 auto;
       margin-top: 48px;
       margin-left: 40px;
