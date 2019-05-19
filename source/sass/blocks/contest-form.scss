@@ -347,6 +347,7 @@
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
+    padding-top: 8px;
   }
 
   .contest-form__wrapper {
@@ -389,6 +390,7 @@
   }
 
   .contest-form__wrapper--contacts {
+    margin-bottom: 22px;
     .contest-form__inner {
       display: flex;
       justify-content: center;
@@ -397,11 +399,19 @@
     .contest-form__item {
       width: 375px;
       margin-right: 36px;
+      margin-bottom: 14px;
       margin-left: 33px;
+    }
+
+    .form-item__label {
+      padding-top: 11px;
+      padding-left: 20px;
     }
   }
 
   .contest-form__wrapper--progress {
+    margin-bottom: 9px;
+
     .contest-form__inner {
       display: flex;
       flex-wrap: wrap;

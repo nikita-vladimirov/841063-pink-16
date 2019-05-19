@@ -84,15 +84,16 @@
   .positive-effect__container {
     width: 940px;
     padding-top: 115px;
-    padding-right: 55px;
+    padding-right: 44px;
     padding-bottom: 75px;
+    padding-left: 30px;
 
     background-size: 298px 345px;
-    background-position: 10px 50px;
+    background-position: 0 47px;;
   }
 
   .positive-effect__container::before {
-    left: 32px;
+    left: 22px;
     bottom: 53px;
 
     width: 252px;
@@ -117,7 +118,7 @@
   }
 
   .positive-effect__text {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     font-size: 18px;
     line-height: 30px;

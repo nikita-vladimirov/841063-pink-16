@@ -155,7 +155,8 @@
     padding-left: 10px;
 
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position-x: 27px;
+    background-position-x: 28px;
+    background-size: 1048px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");

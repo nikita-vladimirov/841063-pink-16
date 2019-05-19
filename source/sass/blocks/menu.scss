@@ -25,13 +25,13 @@
   text-transform: uppercase;
 }
 
-.menu__item:hover a {
+.menu__item:hover:not(.menu__item--active) a,
+.menu__item:focus:not(.menu__item--active) a {
   color: $color-red;
 }
 
-.menu__item:active a {
-  color: $color-red;
-  opacity: 0.3;
+.menu__item:active:not(.menu__item--active) a {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
