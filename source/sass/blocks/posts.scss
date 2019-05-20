@@ -23,13 +23,18 @@
 
 .posts__panorama-sign {
   position: absolute;
-  right: 0;
+  top: 5px;
 
-  margin-right: 20px;
-  padding-top: 6px;
+  width: 300px;
+
+  text-align: right;
+}
+
+.posts__panorama-sign span{
+  padding-top: 9px;
   padding-right: 20px;
-  padding-bottom: 6px;
-  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-left: 19px;
 
   background-color: $color-red;
 
@@ -55,7 +60,9 @@
   }
 
   .posts__panorama-sign {
-    top: 57px;
+    top: 62px;
+
+    width: 640px;
   }
 }
 
@@ -78,8 +85,10 @@
   }
 
   .posts__panorama-sign {
-    top: 54px;
+    top: 59px;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-    margin-right: 130px;
+    width: 940px;
   }
 }

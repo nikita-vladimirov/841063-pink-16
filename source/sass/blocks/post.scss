@@ -85,15 +85,6 @@
     padding: 0;
   }
 
-  .posts__item--prime {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0;
-
-    background-color: #ffffff;
-  }
-
   .post__image {
     width: 100%;
     padding: 0;
@@ -126,6 +117,13 @@
   }
 
   .posts__item--prime {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+
+    background-color: #ffffff;
+
     .post__image {
       min-height: 506px;
     }

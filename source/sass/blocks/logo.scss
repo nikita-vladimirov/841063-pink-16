@@ -3,18 +3,20 @@
   margin-left: -72px;
 }
 
-.logo:hover g,
-.logo:hover path,
-.logo:focus g,
-.logo:focus path {
+.logo:hover:not(.logo--active) g,
+.logo:hover:not(.logo--active) path,
+.logo:focus:not(.logo--active) g,
+.logo:focus:not(.logo--active) path {
   fill: $color-red;
 }
 
-.logo:active {
+.logo:active:not(.logo--active) {
   .icon-header {
     opacity: 0.3;
   }
-  g, path {
+
+  g,
+  path {
     fill: #ffffff;
   }
 }
