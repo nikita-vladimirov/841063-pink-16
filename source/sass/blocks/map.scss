@@ -9,7 +9,7 @@
   top: 0;
   content: "";
   display: inline-flex;
-  height: 94px;
+  height: 34px;
   width: 100%;
   left: 0;
   right: 0;
@@ -32,6 +32,10 @@
 
   .map iframe {
     height: 375px;
+  }
+
+  .map::after {
+    height: 70px;
   }
 }
 

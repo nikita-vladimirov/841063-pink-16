@@ -43,17 +43,10 @@ body {
   background-color: #ffffff;
 }
 
-@media ($tablet-width) {
-  body {
-    width: 660px;
-  }
-}
-
 a {
   text-decoration: none;
 }
 
 img {
-  // max-width: 100%;
   width: 100%;
 }
