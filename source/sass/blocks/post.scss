@@ -52,7 +52,7 @@
   content: "";
 
   position: absolute;
-  top: 7px;
+  top: 6px;
   left: -31px;
 
   width: 13px;
@@ -110,6 +110,7 @@
 
   .post__like {
     margin-left: 0;
+    padding-right: 17px;
   }
 
   .post__like::before {
@@ -142,11 +143,11 @@
     .post__like {
       position: absolute;
       top: 25px;
-      right: 59px;
+      right: 42px;
     }
 
     .post__like::before {
-      left: 110px;
+      left: 100%;
     }
   }
 }

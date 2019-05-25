@@ -26,8 +26,9 @@
 .footer__logo:active {
   opacity: 0.3;
 
-  icon-footer__letters {
+  .icon-footer__letters {
     fill: $navy-blue;
+  }
 }
 
 .footer__social {
