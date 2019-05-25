@@ -36,10 +36,6 @@
   padding-left: 0;
 }
 
-.contest-form__legend {
-  margin: 0 auto;
-}
-
 .contest-form__wrapper--name {
   margin-bottom: 22px;
 
@@ -110,6 +106,7 @@
 
 .contest-form__legend {
   width: 240px;
+  margin: 0 auto;
   padding-bottom: 46px;
 
   line-height: 18px;
@@ -256,7 +253,7 @@
   .contest-form__wrapper--contacts {
     order: 2;
     margin-top: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-bottom: 19px;
 
     .contest-form__group {
@@ -280,8 +277,6 @@
     }
 
     .form-item__input {
-
-
       order: -1;
       width: 440px;
       padding-right: 75px;
@@ -289,14 +284,12 @@
 
     .form-item__input[id="phone"] {
       background: url("../img/icon-phone.svg") no-repeat 453px center,
-                linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center
-    ;
+      linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center;
     }
 
     .form-item__input[id="mail"] {
       background: url("../img/icon-mail.svg") no-repeat 453px center,
-                linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center
-    ;
+      linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center;
     }
 
     .form-item__label {
