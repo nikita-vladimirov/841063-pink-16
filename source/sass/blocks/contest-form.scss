@@ -25,8 +25,6 @@
 
 
 .contest-form__group {
-  display: flex;
-  flex-wrap: wrap;
   width: 280px;
   margin: 0;
   padding: 0;
@@ -36,6 +34,10 @@
 
 .contest-form__inner {
   padding-left: 0;
+}
+
+.contest-form__legend {
+  margin: 0 auto;
 }
 
 .contest-form__wrapper--name {
@@ -100,6 +102,8 @@
   }
 
   .contest-form__review {
+    display: block;
+    margin: 0 auto;
     margin-top: 17px;
   }
 }
@@ -346,7 +350,7 @@
 
 @media (min-width: $desktop-width) {
   .contest-form {
-    flex-direction: unset;
+    flex-direction: row;
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
