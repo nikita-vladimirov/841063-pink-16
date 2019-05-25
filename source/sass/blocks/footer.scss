@@ -16,19 +16,18 @@
   padding-bottom: 34px;
 }
 
-.footer__logo:hover g,
-.footer__logo:hover path,
-.footer__logo:focus g,
-.footer__logo:focus path {
+.footer__logo:hover:not(:active) g,
+.footer__logo:hover:not(:active) path,
+.footer__logo:focus:not(:active) g,
+.footer__logo:focus:not(:active) path {
   fill: $color-red;
 }
 
 .footer__logo:active {
   opacity: 0.3;
 
-  .icon-footer__letters {
+  icon-footer__letters {
     fill: $navy-blue;
-  }
 }
 
 .footer__social {
