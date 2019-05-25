@@ -3,15 +3,22 @@
 }
 
 .main__description {
-  margin-top: 0;
-  margin-bottom: 13px;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 46px;
-  padding-right: 20px;
   padding-bottom: 23px;
-  padding-left: 20px;
 
   text-align: center;
   line-height: 30px;
+}
+
+.main__description--photo {
+  width: 245px;
+}
+
+.main__title {
+  width: 276px;
+  margin: 0 auto;
 }
 
 .main__description span {
@@ -100,10 +107,14 @@
   }
 
   .main__description {
-    width: 900px;
+    width: 800px;
     margin-bottom: 40px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .main__description--photo {
+    width: 640px;
   }
 
   .main__description br {

@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  margin-top: 12px;
+  margin-top: 26px;
 }
 
 .posts__wrapper {
@@ -48,6 +48,7 @@
 @media (min-width: $tablet-width) {
   .posts {
     width: 660px;
+    margin-top: 13px;
   }
 
   .posts__wrapper {

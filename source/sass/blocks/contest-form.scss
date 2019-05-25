@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
+  margin-top: 14px;
+  margin-bottom: 48px;
   padding: 0;
 
   text-align: left;
@@ -32,6 +34,10 @@
   border: none;
 }
 
+.contest-form__inner {
+  padding-left: 0;
+}
+
 .contest-form__wrapper--name {
   margin-bottom: 22px;
 
@@ -41,8 +47,8 @@
 }
 
 .contest-form__wrapper--progress {
-  margin-top: 38px;
-  padding-bottom: 18px;
+  padding-top: 38px;
+  padding-bottom: 24px;
 
   .contest-form__legend {
     padding-bottom: 0;
@@ -68,8 +74,8 @@
 }
 
 .contest-form__wrapper--app {
-  margin-top: 38px;
-  margin-bottom: 21px;
+  padding-top: 38px;
+  padding-bottom: 41px;
 
   .contest-form__legend {
     padding-bottom: 0;
@@ -154,6 +160,7 @@
     width: 660px;
     margin: 0 auto;
     margin-bottom: 68px;
+    padding-top: 8px;
   }
 
   .contest-form__group {
@@ -212,7 +219,7 @@
 
   .contest-form__wrapper--name {
     order: 0;
-    margin-bottom: 0;
+    margin-bottom: 9px;
 
     .form-item__input {
       margin-bottom: 0;
@@ -228,6 +235,10 @@
       padding-bottom: 0;
     }
 
+    .contest-form__inner {
+      padding-bottom: 35px;
+    }
+
     .contest-form__item {
       margin-top: 49px;
       padding-bottom: 7px;
@@ -241,8 +252,8 @@
   .contest-form__wrapper--contacts {
     order: 2;
     margin-top: 35px;
-    margin-bottom: 22px;
-    padding-bottom: 37px;
+    margin-bottom: 0px;
+    padding-bottom: 19px;
 
     .contest-form__group {
       padding-top: 37px;
@@ -272,28 +283,16 @@
       padding-right: 75px;
     }
 
-    .form-item__label::after {
-      content: "";
-
-      position: absolute;
-      top: 2px;
-      right: 2px;
-
-      width: 59px;
-      height: 59px;
-
-      background-color: $color-grey;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 32%;
+    .form-item__input[id="phone"] {
+      background: url("../img/icon-phone.svg") no-repeat 453px center,
+                linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center
+    ;
     }
 
-    .form-item__label[for="phone"]::after {
-      background-image: url("../img/icon-phone.svg");
-    }
-
-    .form-item__label[for="mail"]::after {
-      background-image: url("../img/icon-mail.svg");
+    .form-item__input[id="mail"] {
+      background: url("../img/icon-mail.svg") no-repeat 453px center,
+                linear-gradient(to right,  #ffffff 88%, $border-color 12%) left center
+    ;
     }
 
     .form-item__label {
@@ -326,12 +325,16 @@
 
   .contest-form__wrapper--emotions {
     order: 4;
-    margin-top: 38px;
-    margin-bottom: 59px;
-    padding-bottom: 50px;
+    margin-top: 7px;
+    margin-bottom: 67px;
+    padding-bottom: 0;
 
     .contest-form__legend {
       padding-bottom: 0;
+    }
+
+    .contest-form__group {
+      padding-bottom: 50px;
     }
 
     .contest-form__review {
@@ -391,7 +394,7 @@
   }
 
   .contest-form__wrapper--contacts {
-    margin-bottom: 22px;
+    margin-bottom: 41px;
 
     .contest-form__inner {
       display: flex;
@@ -408,6 +411,18 @@
     .form-item__label {
       padding-top: 11px;
       padding-left: 20px;
+    }
+
+    .form-item__input[id="phone"] {
+      background: url("../img/icon-phone.svg") no-repeat 332px center,
+                linear-gradient(to right,  #ffffff 84%, $border-color 12%) left center
+    ;
+    }
+
+    .form-item__input[id="mail"] {
+      background: url("../img/icon-mail.svg") no-repeat 332px center,
+                linear-gradient(to right,  #ffffff 84%, $border-color 12%) left center
+    ;
     }
   }
 

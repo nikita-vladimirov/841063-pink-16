@@ -1,7 +1,8 @@
 .contacts {
   max-width: 320px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 40px;
+  padding-bottom: 14px;
 
   text-align: center;
 
@@ -53,6 +54,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     max-width: 660px;
+    padding-top: 46px;
+    padding-bottom: 0;
   }
 
   .contacts__list {

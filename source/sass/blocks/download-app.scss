@@ -51,13 +51,20 @@
 }
 
 .download-app__os {
+  @include no-style;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   width: 205px;
   margin-top: 34px;
-  margin-bottom: 19px;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.download-app__os li {
+  @include no-style;
 }
 
 .download-app__market-btn {
@@ -85,13 +92,13 @@
 
   .download-app__container {
     width: 620px;
-    height: 559px;
+    height: 556px;
     margin-top: 0;
 
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100%;
+    background-size: 701px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -104,7 +111,9 @@
 
   .download-app h2 {
     display: block;
+    margin-top: 30px;
     margin-right: 55px;
+    margin-bottom: 31px;
     margin-left: 55px;
 
     font-size: 40px;
@@ -120,7 +129,7 @@
   }
 
   .download-app__os {
-    margin-bottom: 34px;
+    margin-bottom: 26px;
   }
 
   .download-app__sign {

@@ -35,7 +35,8 @@
   background-position: center center;
 }
 
-.checkbox__input:hover + .checkbox__label::before {
+.checkbox__input:hover + .checkbox__label::before,
+.checkbox__input:focus + .checkbox__label::before {
   border-color: $navy-blue;
 }
 
@@ -43,7 +44,8 @@
   border-color: $color-red;
 }
 
-.checkbox__input:checked:hover + .checkbox__label::before {
+.checkbox__input:checked:hover + .checkbox__label::before,
+.checkbox__input:checked:focus + .checkbox__label::before {
   border-color: $navy-blue;
 }
 
