@@ -20,10 +20,12 @@
 }
 
 .download-app h2 {
+  width: 100%;
   display: none;
 }
 
 .download-app__sign {
+  width: 280px;
   margin-right: 20px;
   margin-left: 20px;
 
@@ -133,6 +135,7 @@
   }
 
   .download-app__sign {
+    width: 300px;
     margin: 0;
 
     font-size: 18px;
