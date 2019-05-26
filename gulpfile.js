@@ -85,6 +85,7 @@ gulp.task("clean", function() {
 
 gulp.task("build", gulp.series(
   "clean",
+  "images",
   "copy",
   "css",
   "html"
