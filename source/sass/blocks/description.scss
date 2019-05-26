@@ -68,11 +68,12 @@
   top: 0;
 
   display: block;
-  height: 94px;
+  height: 100%;
   width: 100%;
   left: 0;
 
   background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
 }
